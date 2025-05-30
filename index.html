@@ -1,0 +1,26 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do Game</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex flex-col items-center justify-start p-6">
+  <h1 class="text-3xl font-bold mb-4">🎮 To-Do Game</h1>
+  <div class="w-full max-w-md space-y-4">
+    <div class="flex gap-2">
+      <input type="text" id="taskInput" placeholder="Add a new task..." class="flex-1 p-2 rounded bg-gray-800 border border-gray-600">
+      <button onclick="addTask()" class="bg-green-500 hover:bg-green-600 px-4 py-2 rounded font-semibold">Add</button>
+    </div>
+    <ul id="taskList" class="space-y-2"></ul>
+    <div class="mt-4 p-4 bg-gray-800 rounded shadow">
+      <p class="text-lg">⭐ XP: <span id="xp">0</span></p>
+      <p class="text-lg">🎯 Level: <span id="level">1</span></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
